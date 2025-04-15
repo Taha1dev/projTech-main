@@ -1,3 +1,4 @@
+'use client'
 import { cn } from '@/app/lib/utils'
 import { useId } from 'react'
 
@@ -28,7 +29,7 @@ export default function GridPattern({
     <svg
       aria-hidden='true'
       className={cn(
-        'pointer-events-none absolute inset-0 h-full w-full fill-gray-400/10 stroke-gray-700/10 ',
+        'pointer-events-none absolute inset-0 h-4/5 w-full fill-gray-400/10 stroke-gray-700/10 ',
         className,
       )}
       {...props}

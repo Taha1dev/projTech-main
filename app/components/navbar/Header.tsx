@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import { DesktopCountrySelector } from './DesktopCountrySelector'
 import { DesktopNavigationLinks } from './DesktopNavigationLinks'
 import { LogoSection } from './LogoSection'
 import { MobileMenuToggleButton } from './MobileMenuToggleButton'
@@ -19,8 +18,8 @@ export default function Header() {
   }
 
   return (
-    <header className='container mx-auto py-8 px-4'>
-      <nav className='flex justify-between items-center rounded-full bg-[#525965] text-white bg-opacity-25 border border-white/10 px-6 md:px-14 py-4 gap-6 md:gap-14'>
+    <header className='container mx-auto py-8 px-4 fixed top-0 z-[1000] '>
+      <nav className='flex justify-between items-center rounded-full bg-[#525965] backdrop-blur-3xl text-white bg-opacity-25 border border-white/10 px-6 md:px-14 py-4 gap-6 md:gap-14'>
         <LogoSection />
 
         <MobileMenuToggleButton
@@ -30,8 +29,7 @@ export default function Header() {
 
         <DesktopNavigationLinks />
 
-        {/* <DesktopCountrySelector countryOptions={countryOptions} /> */}
-        <div></div>
+        <div ></div>
 
         <MobileMenu
           toggleMenu={toggleMenu}

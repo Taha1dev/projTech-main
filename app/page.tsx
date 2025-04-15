@@ -1,36 +1,31 @@
-'use client'
-
-import Footer from './components/footer/footer'
+import HeroComponent from './components/hero-component'
+import MagicButton from './components/ui/MagicButton'
+import { landingPageContent } from './constants'
 import {
-  GridPattern,
-  Hero,
-  Header,
   Sponsers,
   StickyScroll,
   WhyChooseUs,
   ServicesContainer,
   Blurlayer,
   DevelopmentProcess,
-  Testimonials
+  Testimonials,
 } from './constants/barel.components'
 
 export default function Home() {
   return (
-    <div className='bg-foreground'>
-      <GridPattern />
-      <Header />
-      <div className='container mx-auto flex flex-col gap-20 items-center relative mt-7 mb-14'>
-        <Blurlayer />
-        <Hero />
-      </div>
+    <>
+      <HeroComponent
+        title={landingPageContent.hero.title}
+        sub={landingPageContent.hero.sub}
+        children={<MagicButton value={`Let's work together`} />}
+      />
+
       <Sponsers />
       <WhyChooseUs />
       <StickyScroll />
       <ServicesContainer />
       <DevelopmentProcess />
       <Testimonials />
-      <Footer />
-      
-    </div>
+    </>
   )
 }

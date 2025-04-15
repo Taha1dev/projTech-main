@@ -5,6 +5,8 @@
 body {
   font-family: Poppins;
   overflow-x: hidden !important;
+  background-color: var(--foreground);
+  background-color: var(--background);
 }
 
 @keyframes float {
@@ -63,9 +65,10 @@ body {
 
 @layer base {
   :root {
+
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
+    --foreground: 198, 22%, 9%;
+    --card: 200, 14%, 13%;
     --card-foreground: 222.2 84% 4.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
@@ -89,6 +92,7 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
   }
+
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -123,6 +127,7 @@ body {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }

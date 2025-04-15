@@ -1,4 +1,3 @@
-import Hero from '../components/Hero'
 
 import StickyScroll from '../components/ImageSlider'
 import Sponsers from '../components/Sponsers'
@@ -12,7 +11,6 @@ import DevelopmentProcess from '../components/development-process/development-pr
 import Testimonials from '../components/testimonials/testimonials'
 
 export {
-  Hero,
   Header,
   StickyScroll,
   Sponsers,

@@ -26,7 +26,14 @@ export const landingPageContent = {
     ],
   },
 }
-
+export const faqContent = {
+  title: 'FAQs Made Simple and Clear',
+  sub: 'Find clear and concise answers to the most frequently asked questions about our services, policies, and more. If you need additional help, feel free to reach out to us anytime!'
+}
+export const contactContent = {
+  title: 'Get in Touch with ProjTech',
+  sub: 'We’d love to hear from you! Whether you have questions, need support, or want to explore how we can work together, feel free to reach out. Our team is here to assist you.'
+}
 interface CTA {
   value: string
   path: string
