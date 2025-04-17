@@ -83,7 +83,7 @@ const StatsList = ({ stats }: any) => {
 const StatItem = ({ stat }: any) => {
   return (
     <div className='text-center sm:text-left'>
-      <span className='text-blue-500 text-2xl sm:text-3xl'>{stat.value}</span>
+      <span className='gradient-text text-2xl sm:text-3xl'>{stat.value}</span>
       <p className='text-[#B3B3B3] font-light text-sm sm:text-base'>
         {stat.label}
       </p>

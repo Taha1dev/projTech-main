@@ -1,4 +1,4 @@
-import MagicButton from "../ui/MagicButton"
+import MagicButton from '../ui/MagicButton'
 
 export const ServiceSidebar = ({ service }: any) => {
   return (
@@ -6,7 +6,7 @@ export const ServiceSidebar = ({ service }: any) => {
       <h2 className='uppercase text-sm font-bold text-[#5686F6] tracking-wide'>
         our services
       </h2>
-      <h3 className='text-4xl sm:text-5xl lg:text-6xl bg-gradient-to-b from-[#5686F6] inline-block text-transparent bg-clip-text to-[#4465f3] font-normal leading-tight sm:leading-[70px] lg:leading-[86px] mb-6'>
+      <h3 className='text-4xl sm:text-5xl lg:text-6xl inline-block font-medium gradient-text leading-tight sm:leading-[70px] lg:leading-[86px] mb-6'>
         {service.title}
       </h3>
       <p className='text-gray-400 text-base sm:text-lg leading-relaxed'>

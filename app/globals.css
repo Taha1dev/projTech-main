@@ -50,6 +50,13 @@ body {
 }
 
 @layer components {
+  .gradient-bg {
+    @apply bg-gradient-to-r from-[#5686F6] to-[#3E5AF2];
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#5686F6] to-[#3E5AF2] bg-clip-text text-transparent;
+  }
 
   .custom-list li::before {
     content: "";
@@ -121,8 +128,6 @@ body {
   }
 }
 
-
-
 @layer base {
   * {
     @apply border-border;
@@ -131,4 +136,72 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+
+/* swiper-custom.css */
+.text-swiper .swiper-button-next,
+.text-swiper .swiper-button-prev {
+  color: #3e5af2;
+  top: auto;
+  bottom: 0;
+  margin-top: 0;
+}
+
+.text-swiper .swiper-button-next {
+  right: 0;
+}
+
+.text-swiper .swiper-button-prev {
+  left: 0;
+}
+
+.vertical-pagination {
+  position: relative;
+}
+
+.vertical-pagination .vertical-bullet {
+  width: auto;
+  height: auto;
+  text-align: left;
+  opacity: 0.5;
+  background: transparent;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  margin-left: 1.5rem;
+}
+
+.vertical-pagination .vertical-bullet::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #3e5af2;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.vertical-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+  color: #3e5af2;
+  font-weight: 600;
+}
+
+.vertical-pagination .swiper-pagination-bullet-active::before {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: #3e5af2;
+}
+
+.image-swiper {
+  --swiper-theme-color: #3e5af2;
 }

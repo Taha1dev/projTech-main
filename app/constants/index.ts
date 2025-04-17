@@ -34,6 +34,11 @@ export const contactContent = {
   title: 'Get in Touch with ProjTech',
   sub: 'We’d love to hear from you! Whether you have questions, need support, or want to explore how we can work together, feel free to reach out. Our team is here to assist you.'
 }
+export const servicesContent = {
+  title: 'Our Solutions and Services',
+  sub: 'We offer a range of services designed to meet your needs. our expertise ensures quality, reliability, and results. Explore how we can help you achieve your goals.',
+  form: 'Ready to Build Something Amazing ?'
+}
 interface CTA {
   value: string
   path: string
