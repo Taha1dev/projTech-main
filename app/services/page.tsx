@@ -53,8 +53,8 @@ export default function ServicesPage() {
       </div>
       <div className='lg:mt-20 mt-10 flex flex-col items-center justify-center gap-12'>
         <GradientText title={servicesContent.form} />
-        {/* <ContactForm /> */}
-        <IZDBSection />
+        <ContactForm />
+        {/* <IZDBSection /> */}
       </div>
     </section>
   )

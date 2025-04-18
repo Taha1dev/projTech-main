@@ -39,6 +39,25 @@ export const servicesContent = {
   sub: 'We offer a range of services designed to meet your needs. our expertise ensures quality, reliability, and results. Explore how we can help you achieve your goals.',
   form: 'Ready to Build Something Amazing ?'
 }
+export const projectsContent = {
+  title: 'Our Tech-Driven Project Showcase',
+  sub: 'Explore our portfolio of innovative projects that showcase ProjTech’s expertise in IT solutions, our work reflects our commitment to excellence, security, and seamless user experiences. Discover how we bring ideas to life with technology.',
+  form: 'Ready to Build Something Amazing ?'
+}
+export const aboutContent = {
+  title: 'Innovating the Digital World',
+  sub: 'At ProjTech, we take pride in delivering high-quality, innovative solutions that transform businesses. Here are some of our flagship projects that showcase our expertise and commitment to excellence:',
+  form: 'Discover our Projects',
+  services: {
+    title: "Our services",
+    desc: "We offer a range of services designed to meet your needs. our expertise ensures quality, reliability, and results. Explore how we can help you achieve your goals."
+  },
+  footer: {
+    title: 'What Sets Us Apart?',
+    desc: "At ProjTech, we stand out by delivering innovative solutions, building strong partnerships, and driving real business impact with passion and excellence."
+  },
+  contactTitle: 'We are happy to answer all your questions!'
+}
 interface CTA {
   value: string
   path: string

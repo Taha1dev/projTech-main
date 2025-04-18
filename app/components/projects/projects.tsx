@@ -11,7 +11,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import MagicButton from '../ui/MagicButton'
 
-export default function IZDBPage() {
+export default function ProjectsSwiper() {
   const [mounted, setMounted] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
   const swiperRef = useRef<SwiperRef>(null)
@@ -62,9 +62,7 @@ export default function IZDBPage() {
   return (
     <div className='flex flex-col text-white'>
       <div className='container mx-auto px-4 py-8 flex flex-col md:flex-row gap-8 items-start'>
-        {/* Left side with description and vertical bullets */}
         <div className='w-full md:w-2/5 flex flex-col relative'>
-          {/* Vertical navigation bullets */}
           <div className='absolute left-0 top-1/2 -translate-y-1/2 flex flex-col gap-4'>
             {slides.map((_, index) => (
               <button
@@ -80,20 +78,15 @@ export default function IZDBPage() {
             ))}
           </div>
 
-          <div className='pl-10'>
-            <h1 className='text-3xl font-bold mb-6'>IZDB</h1>
+          <div className='pl-10 flex-1'>
+            <h1 className='text-3xl font-bold mb-6'>izdb</h1>
 
             <p className='text-lg mb-8'>
-              The Interkulturelles Zentrum für Dialog und Bildung e.V. (IZDB) in
-              Berlin is a vibrant non-profit organization that not only
-              functions as a mosque center but also plays a crucial role in
-              fostering social dialogue. It actively builds networks within the
-              community and offers a diverse array of educational programs
-              tailored for individuals of all ages. From workshops to cultural
-              events, the IZDB is dedicated to enhancing understanding and
-              cooperation among different cultural groups.
+              {slides[activeIndex].alt} `Lorem ipsum dolor sit amet, consectetur
+              adipisicing elit. Porro quam mollitia deserunt autem assumenda
+              provident, enim quo neque. Quae ad doloribus vel dolorem facere
+              doloremque nobis quis reprehenderit iure accusamus?`
             </p>
-
             <MagicButton value='Check website' />
           </div>
         </div>

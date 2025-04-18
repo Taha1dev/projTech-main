@@ -43,7 +43,7 @@ export default function DevelopmentProcess() {
   const [activeStep, setActiveStep] = useState(0)
   return (
     <div className='container mx-auto flex flex-col items-center justify-center px-4 py-8 gap-14 lg:gap-20 lg:py-16'>
-      <h3 className='text-2xl sm:text-3xl text-center font-medium bg-gradient-to-b from-[#FFFFFF] to-[#999999] via-[#fff] bg-clip-text text-transparent max-w-7xl'>
+      <h3 className='text-3xl sm:text-4xl text-center font-semibold bg-gradient-to-b from-[#FFFFFF] to-[#999999] via-[#fff] bg-clip-text text-transparent max-w-7xl'>
         Our Development Process
       </h3>
 
